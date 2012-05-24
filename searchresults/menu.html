@@ -1,0 +1,250 @@
+<style type="text/css">
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 100%; /* Main Menu Item widths */
+border-bottom: 1px solid #ccc;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: white;
+text-decoration: none; font: normal 12px Arial;
+color: black;
+padding: 6px;
+border-bottom: 1px solid #fff;
+border-right: 1px solid #fff;
+
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+background: #f4f0ed; /*background of tabs (default state)*/
+color: black;
+
+}
+
+
+
+.sidebarmenu ul li a:hover{
+background-color: #874c00;
+color:white
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+position: absolute;
+ /*Sub Menu Items width */
+top: 0;
+visibility: hidden;
+}
+
+.sidebarmenu a.subfolderstyle{
+background: url(right.gif) no-repeat 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+
+</style>
+
+<script type="text/javascript">
+
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+
+
+<div class="sidebarmenu">
+<ul id="sidebarmenu1">
+<li  > <!--di isi *hpcf* -->
+    <a href="index.php"
+ >All Categories</a>
+   
+  </li>
+  
+  <li >
+     <a href="index.php?kategori=makanan&kat1=makanan-indonesia&kat2=fastfood&kat3=lesehan&kat4=pesan-antar" >Makanan</a>
+    <ul  >
+      <li  ><a href="index.php?kat=makanan-indonesia"
+  >Makanan Indonesia</a></li>
+      <li><a href="index.php?kat=fastfood" >Fastfood</a></li>
+      <li><a href="index.php?kat=lesehan" >lesehan</a></li>
+      <li><a href="index.php?kat=pesan-antar" >Pesan Antar</a></li>
+      
+      </ul>
+  </li>
+  
+  <li class="">
+      <a href="index.php?kategori=fashion&kat1=pakaian&kat2=tas&kat3=aksesoris&kat4=sepatu&kat5=baju-anak-anak" aria-haspopup="true"
+ _sp="p5197.c0.m21">Fashion<i><!-- - --></i></a>    
+    <ul role="menu">
+      <li class="hpcf"><a href="index.php?kat=pakaian"
+ role="menuitem" _sp="p5197.c0.m1380">Pakaian</a></li>
+      <li><a href="index.php?kat=tas" role="menuitem"
+ _sp="p5197.c0.m1380">Tas</a></li>
+      <li><a href="index.php?kat=sepatu"
+ role="menuitem" _sp="p5197.c0.m1380">Sepatu</a></li>
+      <li><a href="index.php?kat=aksesoris"
+ role="menuitem" _sp="p5197.c0.m1380">Aksesoris</a></li>
+      <li><a href="index.php?kat=baju-anak-anak"
+ role="menuitem" _sp="p5197.c0.m1380">Baju anak-anak</a></li>
+      </ul>
+  </li>
+  
+  
+  <li>
+      <a href="index.php?kategori=kendaraan&kat1=mobil-dan-motor&kat2=sepeda" aria-haspopup="true"
+ _sp="p5197.c0.m21">Kendaraan<i><!-- - --></i></a>    
+    <ul role="menu">
+      <li class="hpcf"><a
+ href="index.php?kat=rental-mobil-dan-motor"
+ role="menuitem" _sp="p5197.c0.m1381">Rental Mobil &amp; Motor</a></li>
+      <li class="hpcf"><a
+ href="index.php?kat=bengkel-mobil-dan-motor"
+ role="menuitem" _sp="p5197.c0.m1381">Bengkel Mobil &amp; Motor</a></li>	
+      <li><a
+ href="index.php?kat=sepeda"
+ role="menuitem" _sp="p5197.c0.m1381">Sepeda &amp; Fixed gear bikes</a></li>
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  <li>
+      <a href="index.php?kategori=elektronik-dan-teknologi&kat1=kamera-dan-foto&kat2=handphone-dan-pda&kat3=komputer-dan-warnet"
+ aria-haspopup="true" _sp="p5197.c0.m21">Elektronik &amp; Teknologi<i><!-- - --></i></a>    
+    <ul role="menu">
+      <li class="hpcf"><a href="index.php?kat=kamera-dan-foto"
+ role="menuitem" _sp="p5197.c0.m1382">Cameras &amp; Photo</a></li>
+      <li><a href="index.php?kat=handphone-dan-pda" role="menuitem"
+ _sp="p5197.c0.m1382">Hand Phones &amp; PDAs</a></li>
+      <li><a href="index.php?kat=komputer-dan-warnet" role="menuitem"
+ _sp="p5197.c0.m1382">Komputer &amp; Warnet</a></li>
+    </ul>
+  </li>
+  
+  
+  
+  
+  <li>
+      <a href="index.php?kat=hotel-dan-penginapan"
+ aria-haspopup="true" _sp="p5197.c0.m21">Hotel dan Penginapan<i><!-- - --></i></a>    
+   
+  </li>
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>
+      <a href="index.php?kategori=hiburan-musik-dan-games&kat1=dvd-dan-movies&kat2=musik&kat3=objek-wisata"
+ aria-haspopup="true" _sp="p5197.c0.m21">Hiburan, Wisata &amp; Musik<i><!-- - --></i></a>    
+    <ul role="menu">
+	<li><a href="index.php?kat=objek-wisata" role="menuitem"
+ _sp="p5197.c0.m1385">Objek Wisata</a></li>      
+	<li class="hpcf"><a href="index.php?kat=dvd-dan-movies"
+ role="menuitem" _sp="p5197.c0.m1385">DVDs &amp; Movies</a></li>
+      <li><a href="index.php?kat=musik" role="menuitem"
+ _sp="p5197.c0.m1385">Music</a></li>
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  <li>
+      <a href="index.php?kategori=buku&kat1=pelajaran&kat2=komik&kat3=other" aria-haspopup="true"
+ _sp="p5197.c0.m21">Buku<i><!-- - --></i></a>    
+    <ul role="menu">
+      <li><a href="index.php?kat=pelajaran"
+ role="menuitem" _sp="p5197.c0.m1386">Pelajaran</a></li>
+ 	  <li><a href="index.php?kat=komik"
+ role="menuitem" _sp="p5197.c0.m1386">Komik</a></li>
+ 	  <li><a href="index.php?kat=other"
+ role="menuitem" _sp="p5197.c0.m1386">Other</a></li>
+    </ul>
+  </li>
+  
+  
+  
+  
+  <li>
+      <a href="index.php?kategori=deals&kat1=daily-deals&kat2=deal-finder" aria-haspopup="true"
+ _sp="p5197.c0.m21">Deals<i><!-- - --></i></a>    
+    <ul role="menu">
+      <li class="hpcf"><a href="index.php?kat=daily-deals" role="menuitem"
+ _sp="p5197.c0.m1387">Daily Deals</a></li>
+      <li><a href="index.php?kat=deal-finder" role="menuitem"
+ _sp="p5197.c0.m1387">Deal Finder</a></li>
+    </ul>
+  </li>
+  <li>
+  	
+  	
+  	
+      <a href="index.php?kat=toko-online-dan-lain-lain" _sp="p5197.c0.m21">Toko Online & Lain-lain</a>    
+  </li>
+
+  <li  >  
+    <a href="index.php?kat=jasa"
+ >Jasa</a>
+   
+  </li>
+
+</ul>
+
+  
+
+</div>

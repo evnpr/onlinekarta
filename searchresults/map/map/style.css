@@ -1,0 +1,31 @@
+﻿ /*  Visit http://www.javascriptatoms.com for more JavaScript Atoms Tutorials  */
+
+#ball 
+{
+    background-color: #f04318;
+    border: 1px solid;
+    height: 5em;
+    width: 5em;
+    padding: .5em;
+    position: relative;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+}#ball2
+{
+    background-color: #f04318;
+    border: 1px solid;
+    height: 5em;
+    width: 5em;
+    padding: .5em;
+    position: relative;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+}
+#square
+{
+    background-color: #5754c7;
+    border: 1px solid;
+    height: 100px;
+    width: 300px;    
+   
+}

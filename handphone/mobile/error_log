@@ -1,0 +1,36 @@
+[17-Apr-2011 19:20:56] PHP Parse error:  syntax error, unexpected $end in /home/evanp/public_html/onlinekarta.com/produk1.php on line 288
+[19-Apr-2011 11:18:36] PHP Warning:  include(index.htm) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/evanp/public_html/onlinekarta.com/home.php on line 38
+[19-Apr-2011 11:18:36] PHP Warning:  include(index.htm) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/evanp/public_html/onlinekarta.com/home.php on line 38
+[19-Apr-2011 11:18:36] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'index.htm' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/evanp/public_html/onlinekarta.com/home.php on line 38
+[20-Apr-2011 22:10:40] PHP Warning:  include(index1.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/evanp/public_html/onlinekarta.com/index.php on line 41
+[20-Apr-2011 22:10:41] PHP Warning:  include(index1.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/evanp/public_html/onlinekarta.com/index.php on line 41
+[20-Apr-2011 22:10:41] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'index1.html' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/evanp/public_html/onlinekarta.com/index.php on line 41
+[20-Apr-2011 23:20:29] PHP Parse error:  syntax error, unexpected '{' in /home/evanp/public_html/onlinekarta.com/data.php on line 12
+[20-Apr-2011 23:21:22] PHP Parse error:  syntax error, unexpected '}' in /home/evanp/public_html/onlinekarta.com/data.php on line 20
+[20-Apr-2011 23:27:24] PHP Warning:  include(produk11.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/evanp/public_html/onlinekarta.com/data.php on line 15
+[20-Apr-2011 23:27:25] PHP Warning:  include(produk11.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/evanp/public_html/onlinekarta.com/data.php on line 15
+[20-Apr-2011 23:27:25] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'produk11.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/evanp/public_html/onlinekarta.com/data.php on line 15
+[20-Apr-2011 23:27:40] PHP Warning:  include(produk11.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/evanp/public_html/onlinekarta.com/data.php on line 15
+[20-Apr-2011 23:27:40] PHP Warning:  include(produk11.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/evanp/public_html/onlinekarta.com/data.php on line 15
+[20-Apr-2011 23:27:40] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'produk11.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/evanp/public_html/onlinekarta.com/data.php on line 15
+[21-Apr-2011 11:29:24] PHP Parse error:  syntax error, unexpected T_STRING in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 11:29:47] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 11:29:51] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 11:31:32] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 11:32:27] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 11:33:32] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 11:33:43] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 11:33:51] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 11:34:28] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 11:36:01] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 11:44:34] PHP Parse error:  syntax error, unexpected '<' in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 11:47:10] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/evanp/public_html/onlinekarta.com/data.php:2) in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 11:51:38] PHP Parse error:  syntax error, unexpected T_STRING in /home/evanp/public_html/onlinekarta.com/data.php on line 2
+[21-Apr-2011 12:14:41] PHP Fatal error:  Call to undefined function  openurl() in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 12:15:42] PHP Fatal error:  Call to undefined function  openurl() in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[21-Apr-2011 12:21:54] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/evanp/public_html/onlinekarta.com/data.php:2) in /home/evanp/public_html/onlinekarta.com/data.php on line 3
+[21-Apr-2011 12:23:11] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/evanp/public_html/onlinekarta.com/data.php:3) in /home/evanp/public_html/onlinekarta.com/data.php on line 4
+[21-Apr-2011 12:24:09] PHP Parse error:  syntax error, unexpected '<' in /home/evanp/public_html/onlinekarta.com/data.php on line 13
+[22-Apr-2011 02:17:27] PHP Warning:  include(index.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/evanp/public_html/onlinekarta.com/home.php on line 38
+[22-Apr-2011 02:17:27] PHP Warning:  include(index.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/evanp/public_html/onlinekarta.com/home.php on line 38
+[22-Apr-2011 02:17:27] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'index.html' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/evanp/public_html/onlinekarta.com/home.php on line 38

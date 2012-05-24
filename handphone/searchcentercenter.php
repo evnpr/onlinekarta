@@ -1,0 +1,27 @@
+	<option value="makanan-indonesia">Makanan Indonesia</option>	
+	<option value="pakaian">Pakaian</option>
+	<option value="aksesoris">Aksesoris</option>
+	<option value="fastfood">Fastfood</option>
+	<option value="lesehan">Lesehan</option>
+	<option value="pesan-antar">Makanan pesan-antar</option>
+	<option value="tas">Tas</option>
+	<option value="sepatu">Sepatu</option>
+	<option value="baju-anak-anak">Baju Anak-anak</option>
+	<option value="rental-mobil-dan-motor">Rental Mobil & Motor</option>
+	<option value="bengkel-mobil-dan-motor">Bengkel Mobil & Motor</option>
+	<option value="sepeda">Sepeda & Fixie</option>
+	<option value="kamera-dan-foto">Kamera & Foto</option>
+	<option value="handphone-dan-pda">Handphone & PDA</option>
+	<option value="komputer-dan-warnet">Komputer & Warnet</option>
+	<option value="hotel-dan-penginapan">Hotel & Penginapan</option>
+	<option value="objek-wisata">Objek Wisata</option>
+	<option value="dvd-and-movies">DVD dan Movies</option>
+	<option value="musik">Musik</option>
+ 
+	<option value="pelajaran">Buku Pelajaran</option>
+	<option value="komik">Komik</option>
+	<option value="other">Buku Lain2</option>
+	<option value="daily-deals">Daily Deals</option>
+	<option value="deal-finder">Deal Finder</option>
+	<option value="toko-online-dan-lain-lain">Toko Online & Lain-lain</option>
+	<option value="jasa">Jasa & Services</option>

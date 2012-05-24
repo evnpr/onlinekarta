@@ -1,0 +1,52 @@
+﻿ /*  Visit http://www.javascriptatoms.com for more JavaScript Atoms Tutorials  */
+
+#ball 
+{
+    background-color:grey;
+    border: 0px solid;
+    height: 20;
+    text-align:center;
+    width: 802px;
+    float:left;
+}
+#ball:hover
+{
+    background-color:#bebebe;
+    border: 0px solid;
+ 
+    height: 20;
+    text-align:center;
+    width: 802px;
+    float:left;
+}
+
+#ball2
+{
+    background-color: #f04318;
+    border: 1px solid;
+    height: 5em;
+    width: 5em;
+    padding: .5em;
+    position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+#square
+{
+    background-color: #bebebe;
+    border: 1px solid;
+    height: 300;
+    width: 800px;
+    display: none;    
+   
+}
+
+a:link
+{
+color:#874c00;
+}
+
+a:visited
+{
+color:brown;
+}
