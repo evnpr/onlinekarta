@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+  <head>
+    <title>InPlaceRichEditor Functional Tests</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="language" content="en" />
+	    <style type="text/css" media="screen">
+      .inplacericheditor-saving { background: url(wait.gif) bottom right no-repeat; }
+	  
+	  body, div, p, h1, h2, h3, ul, ol, span, a, table, td, form, img, li {
+  font-family: arial;
+  font-size: 14px;
+  
+  font-weight: normal;
+}
+
+body {
+  font-size:14px;
+}
+
+.navigation {
+  background: #9DC569;
+  color: #fff;
+}
+
+.navigation h1 {
+  font-size: 20px;
+}
+
+.navigation h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  border: 1px solid #e8a400;
+  border-bottom: 0;
+  background: #ffc;
+  color: #E8A400;
+  padding: 8px;
+  padding-bottom: 0;
+}
+
+.navigation ul {
+  margin-top: 0;
+  border: 1px solid #E8A400;
+  border-top: none;
+  background: #ffc;
+  padding: 8px;
+  margin-left: 0;
+}
+
+.navigation ul li {
+  font-size: 12px;
+  list-style-type: none;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  color: #555;
+}
+
+.navigation a {
+  color: #ffc;
+}
+
+.navigation ul li a {
+  color: #000;
+}
+
+#log {
+  padding-bottom: 1em;
+  border-bottom: 2px solid #000;
+  margin-bottom: 2em;
+}
+
+#logsummary {
+  margin-bottom: 1em;
+  padding: 1ex;
+  border: 1px solid #000;
+  font-weight: bold;
+}
+
+#logtable {
+  width:100%;
+  border-collapse: collapse;
+  border: 1px dotted #666;
+}
+
+#logtable td, #logtable th {
+  text-align: left;
+  padding: 3px 8px;
+  border: 1px dotted #666;
+}
+
+#logtable .passed {
+  background-color: #cfc;
+}
+
+#logtable .failed, #logtable .error {
+  background-color: #fcc;
+}
+
+#logtable .nameCell {
+  cursor: pointer;
+}
+      </style>
+  </head>
+  <body>
+     
+    <h1 id="tobeeditedadvanced"><p style="text-align: center;">Apakah tertarik melanjutkan pendidikan di luar negeri?</p>
+<p style="text-align: center;">Jika ya, apa motivasinya?</p>
+<p style="text-align: center;">Sudah tau gambaran tentang pendidikan dan culture di luar negeri?</p>
+<p style="text-align: center;">Tertarik untuk mengunjungi langsung dan merasakan sistem pengajaran di luar negeri?</p>
+<p style="text-align: center;">Tertarik untuk ikut bimbingan belajar A level yang khusus untuk persiapan belajar di LN?</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">jadi begini saja misalnya</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">test is it OK?</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><img src="https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-ash4/296253_2335578627688_1196514759_32328229_2117641822_n.jpg" alt="" width="960" height="540" /></p></h1>
+    <script>
+    // <![CDATA[
+      new Ajax.InPlaceRichEditor($('tobeeditedadvanced'), 'upload.php', {
+        ajaxOptions: {method: 'get'}}, //override so we can use a static for the result
+        tinymce_advanced_options
+      );
+    // ]]>
+    </script>
+     
+	 
+	  </body>
+</html>
